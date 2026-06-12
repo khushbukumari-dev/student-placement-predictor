@@ -475,12 +475,7 @@ Built with:
 """)
 
 st.sidebar.success("Model Loaded ✅")
-st.markdown("""
-<hr>
-<div style='text-align:center; color:black;'>
-Built with ❤️ by Khushbu Kumari | B.Tech CSE (AI & ML)
-</div>
-""", unsafe_allow_html=True) 
+ 
 st.sidebar.markdown(
     "[🔗 View Project on GitHub](https://github.com/khushbukumari-dev/student-placement-predictor)"
 )   
