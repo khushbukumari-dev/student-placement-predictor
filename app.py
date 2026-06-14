@@ -452,15 +452,69 @@ if st.button("🚀Predict Placement"):
         </div>
         """, unsafe_allow_html=True)
     
-with st.expander("📌 About this project"):
-    st.write("""
-    This system uses Machine Learning to predict student placement chances 
-    based on academic and skill-based inputs.
-    
-    Built using:
+
+with st.expander("📌 About this Project"):
+    st.markdown("""
+    ### 🎯 Project Objective
+    Predict a student's placement chances based on academic performance,
+    technical skills, internships, projects, certifications, and other
+    career-related factors.
+
+    ### 🤖 Selected Machine Learning Model
+    *Logistic Regression*
+
+    ### ✅ Why Logistic Regression?
+    - Achieved the best overall performance among tested models.
+    - Simple, efficient, and easy to interpret.
+    - Provides probability-based predictions.
+    - Performed slightly better than Decision Tree and Random Forest.
+
+    ### 📊 Target Variable
+    *Placement Status*
+    - 1 → Placed
+    - 0 → Not Placed
+
+    ### 📂 Features Used
+    - CGPA
+    - Backlogs
+    - Branch
+    - College Tier
+    - Aptitude Score
+    - Technical Skills Score
+    - Communication Skills Score
+    - Internship Experience
+    - Number of Projects
+    - Certifications
+    - Hackathon Participation
+    - Open Source Contributions
+    - Extracurricular Activities
+    - Leadership Experience
+    - Placement Training
+    - And other student-related attributes
+
+    ### 📈 Model Performance
+    - Logistic Regression Accuracy: ~70%
+    - Evaluated using Accuracy, Precision, Recall, and F1-Score
+
+    ### 🛠️ Technologies Used
     - Python
-    - Streamlit
+    - Pandas & NumPy
     - Scikit-learn
+    - Streamlit
+    - Joblib
+
+    ### 🚀 Project Workflow
+    Data Collection → Data Cleaning → Feature Engineering →
+    Model Training → Model Evaluation → Streamlit Deployment
+
+    ### 💡 Prediction Output
+    The system predicts:
+    - Placement Probability (%)
+    - Placement Likelihood
+    - Color-based Result Indicator
+        - 🟢 High Placement Chance
+        - 🟠 Moderate Placement Chance
+        - 🔴 Low Placement Chance
     """)
 
 st.sidebar.title("⚙️ Student Profile")
@@ -479,3 +533,19 @@ st.sidebar.success("Model Loaded ✅")
 st.sidebar.markdown(
     "[🔗 View Project on GitHub](https://github.com/khushbukumari-dev/student-placement-predictor)"
 )   
+# st.markdown("""
+# <hr>
+# <div style='text-align:center; color:black;'>
+# Built with ❤️ by Khushbu Kumari | B.Tech CSE (AI & ML)
+# </div>
+# """, unsafe_allow_html=True)
+st.markdown("""
+
+<div style='text-align:center; color:black; font-size:14px;'>
+    Built with ❤️ using Python, Streamlit & Machine Learning<br>
+    Developed by <b>Khushbu Kumari</b> | B.Tech CSE (AI & ML)<br>
+    <a href="https://www.linkedin.com/in/khushbu-kumari-134bba361?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">
+        GitHub
+    </a>
+</div>
+""", unsafe_allow_html=True)
